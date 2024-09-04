@@ -1,0 +1,115 @@
+# Sistema de Gestão Imobiliária
+
+Este projeto cria um banco de dados para gerenciar uma imobiliária, abrangendo propriedades, clientes, agentes e transações. O banco de dados foi desenvolvido em MySQL e fornece uma estrutura para armazenar e manipular informações relacionadas à compra, aluguel e gestão de imóveis.
+
+## Estrutura do Banco de Dados
+
+O banco de dados `Imobiliaria` é composto pelas seguintes tabelas:
+
+- **Propriedades**: Armazena informações sobre os imóveis disponíveis, incluindo endereço, tipo, valor e status (disponível, vendido ou alugado).
+- **Clientes**: Contém dados dos clientes, como nome, telefone, e-mail e tipo de interesse (compra ou aluguel).
+- **Agentes**: Registra informações sobre os agentes imobiliários, incluindo nome, telefone e e-mail.
+- **Transacoes**: Registra as transações realizadas, associando clientes, agentes e propriedades, e inclui detalhes sobre a data e o tipo da transação (compra ou aluguel).
+
+## Script SQL
+
+O script SQL fornecido faz o seguinte:
+
+1. **Criação do Banco de Dados**:
+    - Cria o banco de dados `Imobiliaria`.
+
+2. **Criação das Tabelas**:
+    - `Propriedades`
+    - `Clientes`
+    - `Agentes`
+    - `Transacoes`
+
+3. **Inserção de Dados**:
+    - Adiciona dados iniciais para propriedades, clientes, agentes e transações.
+
+4. **Consultas**:
+    - Lista todas as propriedades disponíveis.
+    - Lista todas as transações de compra.
+    - Detalha informações completas de uma transação, incluindo cliente, agente e propriedade.
+
+5. **Atualizações**:
+    - Atualiza o status de uma propriedade para "Vendido" após uma transação de compra.
+    - Atualiza o número de telefone de um cliente.
+
+6. **Deleções**:
+    - Exclui um cliente que não está mais interessado.
+    - Remove uma propriedade que foi removida da lista de disponíveis.
+
+## Como Usar
+
+1. Clone o repositório:
+    ```bash
+    git clone https://github.com/seu_usuario/sistema-gestao-imobiliaria.git
+    ```
+
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd sistema-gestao-imobiliaria
+    ```
+
+3. Execute o script SQL no seu servidor MySQL:
+    ```bash
+    mysql -u seu_usuario -p < script.sql
+    ```
+
+   Substitua `seu_usuario` pelo seu nome de usuário do MySQL e forneça a senha quando solicitado.
+
+## Consultas e Relacionamentos
+
+- Para listar todas as propriedades disponíveis, utilize a consulta fornecida.
+- Para visualizar as transações de compra, use a consulta correspondente.
+- Para obter detalhes completos sobre transações, incluindo cliente, agente e propriedade, consulte a combinação de tabelas.
+
+## Contribuições
+
+Contribuições são bem-vindas! Para colaborar:
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch (`git checkout -b feature/nome-da-feature`).
+3. Faça as alterações desejadas e commit (`git commit -am 'Adiciona nova feature'`).
+4. Envie as alterações (`git push origin feature/nome-da-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+Para mais informações, entre em contato com [seu_email@example.com](mailto:seu_email@example.com).
+
+
+Enunciado para o Projeto
+Título: Sistema de Gestão Imobiliária
+
+Descrição:
+
+O projeto visa criar um banco de dados para a gestão de uma imobiliária, facilitando a administração e o acompanhamento de imóveis, clientes, agentes e transações. O banco de dados foi desenvolvido em MySQL e inclui tabelas para propriedades, clientes, agentes e transações.
+
+Objetivo:
+
+Desenvolver um banco de dados eficiente para a gestão de imóveis, permitindo a realização das seguintes operações:
+
+Propriedades: Registro de informações sobre imóveis disponíveis para compra ou aluguel.
+Clientes: Armazenamento de dados de clientes interessados em comprar ou alugar imóveis.
+Agentes: Informações sobre os agentes imobiliários que auxiliam nas transações.
+Transações: Registro das transações realizadas, associando clientes, agentes e propriedades.
+Funcionalidades:
+
+Criação e Estruturação do Banco de Dados: Definição das tabelas e suas relações.
+Inserção de Dados: Inclusão de dados iniciais para propriedades, clientes, agentes e transações.
+Consultas: Capacidade de listar propriedades disponíveis, transações de compra e detalhes completos de transações.
+Atualizações: Atualização de status de propriedades e informações de clientes.
+Deleções: Exclusão de clientes e propriedades conforme necessário.
+Tecnologias Utilizadas:
+
+MySQL
+Como Executar:
+
+Clone o repositório e execute o script SQL fornecido no seu servidor MySQL para criar e preencher o banco de dados.
+
